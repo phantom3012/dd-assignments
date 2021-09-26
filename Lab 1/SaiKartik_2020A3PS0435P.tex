@@ -1,0 +1,76 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\title{DD Lab 1 Assignment}
+\author{Sai Kartik \\2020A3PS0435P}
+
+\begin{document}
+\maketitle
+\section*{Canonical SOP form}
+Given Equation: \(\bar{A}\cdot(B+\bar{C})+D\)\\
+Canonical SOP Form:
+$$ABCD+\bar{A}BCD+A\bar{B}CD+AB\bar{C}D+\bar{A}\bar{B}CD+\bar{A}B\bar{C}D+\bar{A}BC\bar{D}$$ $$+A\bar{B}\bar{C}D+\bar{A}B\bar{C}\bar{D}+\bar{A}\bar{B}\bar{C}D+\bar{A}\bar{B}\bar{C}\bar{D}$$
+\subsection*{Truth table}
+(Same obtained for both realisations of the circuit)
+\begin{center}
+    \begin{figure}[ht]
+        \includegraphics[scale=0.80]{TT.jpg}
+    \end{figure}
+\end{center}
+\newpage
+\subsection*{Simple gates realisation}
+\begin{figure}[ht]
+    \includegraphics[scale=0.45]{SOP_basic.png}
+    \caption{Basic gates realisation of SOP form}
+\end{figure}
+\newpage
+\subsection*{NAND Gate realisation}
+\begin{center}
+    \begin{figure}[ht]
+        \includegraphics[scale=0.25]{SOP_NAND.png}
+        \caption{NAND Gate realisation of SOP form}
+    \end{figure}
+\end{center}
+\begin{center}
+    Expression for NAND gate realisation
+    \begin{figure}[ht]
+        \includegraphics{SOP_NAND_exp.jpg}
+    \end{figure}
+\end{center}
+\newpage
+\section*{Canonical POS form}
+Given Equation: \(\bar{A}\cdot(B+\bar{C})+D\)\\
+Canonical POS form: $$(A+B+\bar{C}+D)\cdot(\bar{A}+B+C+D)\cdot(\bar{A}+B+\bar{C}+D)\cdot(\bar{A}+\bar{B}+C+D)\cdot(\bar{A}+\bar{B}+\bar{C}+D)$$
+\subsection*{Truth table}
+(Same obtained for both realisations of the circuit)
+\begin{center}
+    \begin{figure}[ht]
+        \includegraphics[scale=0.80]{TT.jpg}
+    \end{figure}
+\end{center}
+\newpage
+\subsection*{Simple gates realisation}
+\begin{center}
+    \begin{figure}[ht]
+        \includegraphics[scale=0.55]{POS_basic.png}
+        \caption{Basic gates realisation of POS form}
+    \end{figure}
+\end{center}
+\newpage
+\subsection*{NOR Gate realisation}
+\begin{center}
+    \begin{figure}[ht]
+        \includegraphics[scale=0.40]{POS_NOR.png}
+        \caption{NOR Gate realisation of POS form}
+    \end{figure}
+\end{center}
+\begin{center}
+    Expression for NOR gate realisation
+    \begin{figure}[ht]
+        \includegraphics{POS_NOR_exp.jpg}
+    \end{figure}
+\end{center}
+\end{document}
