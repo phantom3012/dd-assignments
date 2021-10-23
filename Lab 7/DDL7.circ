@@ -121,23 +121,24 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabelfont" val="SansSerif plain 12"/>
     <wire from="(170,150)" to="(200,150)"/>
     <wire from="(170,130)" to="(200,130)"/>
-    <wire from="(70,80)" to="(100,80)"/>
     <wire from="(100,150)" to="(130,150)"/>
     <wire from="(100,130)" to="(130,130)"/>
     <wire from="(100,80)" to="(100,130)"/>
     <wire from="(100,130)" to="(100,150)"/>
+    <wire from="(50,80)" to="(60,80)"/>
+    <wire from="(60,80)" to="(100,80)"/>
     <wire from="(60,140)" to="(130,140)"/>
     <wire from="(150,160)" to="(150,190)"/>
+    <comp lib="0" loc="(60,80)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="T"/>
+    </comp>
     <comp lib="0" loc="(150,190)" name="Pin">
       <a name="facing" val="north"/>
       <a name="tristate" val="false"/>
     </comp>
     <comp lib="4" loc="(170,130)" name="J-K Flip-Flop"/>
     <comp lib="0" loc="(60,140)" name="Clock"/>
-    <comp lib="0" loc="(70,80)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="I"/>
-    </comp>
     <comp lib="0" loc="(200,150)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
